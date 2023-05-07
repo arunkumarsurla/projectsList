@@ -7,11 +7,10 @@ const TabItem = props => {
   const changeTab = () => {
     updateTabId(tabId)
   }
-  const updateStyles =  isActive ? "active-tab-btn" : ""
   
   return (
     <li className="tab-item-container ">
-      <button type="button" className={`tab-btn ${updateStyles}`} onClick={changeTab}>
+      <button type="button" className={`tab-btn ${isActive ? "active-tab-btn" : ""}`} onClick={changeTab}>
         {displayText}
       </button>
     </li>

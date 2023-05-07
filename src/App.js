@@ -89,7 +89,7 @@ const projectsList = [
 
 class App extends Component {
   state = {
-    activeTabId : tabsList[1].tabId,
+    activeTabId : tabsList[0].tabId,
     activeTabStyle : 'active-tab-btn',
   }
 
